@@ -19,15 +19,3 @@ app.use(departmentroutes);
 app.listen('5000',()=>{
     console.log('server in running')
 })
-
-app.post('/postu',(req,res)=>{
-    
-    const params = req.body;
-    console.log(params)
-    db.query("INSERT INTO `users` SET ? ",params,(err,result,fields)=>{
-        if(!err)
-            res.send(result);
-        else
-            res.send(err);
-    })
-})
