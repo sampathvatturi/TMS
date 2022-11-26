@@ -5,20 +5,16 @@ const{
      getusers,
      postusers,
      updateusers,
-     deleteusers
+     deleteusers,
+     getuser
 } = require('../controllers/users');
 
 
-
-
-// const{  create
-    // } = require('../modules/tables');
-
-// router.get('/create',create);
 router.get('/users',getusers);
 router.post('/users',postusers);
-router.patch('/updateuser',updateusers);
-router.delete('/deleteuser',deleteusers);
+router.patch('/updateuser/:id',updateusers);
+router.delete('/deleteuser/:id',deleteusers);
+router.get('/users/:id',getuser);
 
 
 

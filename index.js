@@ -11,10 +11,12 @@ const db = require('./config/config');
 const userroutes = require('./routes/userroutes');
 const ticketroutes = require('./routes/ticketroutes');
 const departmentroutes = require('./routes/departmentroutes');
+const authroutes = require('./routes/authroutes');
 
 app.use(userroutes);
 app.use(ticketroutes);
 app.use(departmentroutes);
+app.use(authroutes);
 
 app.listen('5000',()=>{
     console.log('server in running')
