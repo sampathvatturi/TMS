@@ -1,2 +1,2 @@
-# TMS
-ticket management system
+# KN app node
+backend using mysql 
