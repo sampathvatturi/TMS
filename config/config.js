@@ -9,7 +9,7 @@ const mysql = require('mysql');
 
 
 const con = mysql.createConnection({
-    database:'test',
+    database:'knapp',
     host: 'database-2.cbc4xnqy8kql.us-west-2.rds.amazonaws.com',
     user: 'admin',
     password: 'password',
